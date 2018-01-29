@@ -1,5 +1,21 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin:0px;
+  height: 100%;
+  width: 100%;
+}
+
 img.logo {
   height: 50px;
+}
+
+a.logo {
+  height: 0px;
+  text-decoration: none;
 }
 
 img.profile_pic {
@@ -9,22 +25,54 @@ img.profile_pic {
 }
 
 img.upload {
-  height: 45px;
+  height: 40px;
   padding-right: 5px;
+}
+
+img.search {
+  height: 30px;
+}
+
+button.search {
+  position: relative;
+  top: -13px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+button.search:hover {
+  background: #ccc;
+}
+
+a.profile {
+  height: 0px;
+  text-decoration: none;
+}
+
+a.upload {
+  height: 0px;
+  text-decoration: none;
+}
+
+div.searchbar{
+  display: inline-block;
+  width: 70%;
 }
 
 div.layoutRight {
   float: right;
-  padding-right: 15px;
+  width: 7%;
 }
 
 input.searchbar {
-  border-width: 1px;
+  border: none;
   position: relative;
   top: -18px;
   font-family: system-ui;
+  padding: 5px;
   font-size: 20px;
-  width: 400px;
+  width: 60%;
   height: 35px;
 }
 
@@ -66,17 +114,6 @@ input.leftMenuItems {
   font-size: 24px;
   text-align: left;
   background-color: #FAFAFA;
-}
-
-body {
-  margin:0px;
-  height: 100%;
-  width: 100%;
-}
-
-html {
-  height: 100%;
-  width: 100%;
 }
 
 input.leftMenuItems:hover {
