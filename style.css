@@ -1,0 +1,84 @@
+img.logo {
+  height: 50px;
+}
+
+img.profile_pic {
+  height: 45px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+img.upload {
+  height: 45px;
+  padding-right: 5px;
+}
+
+div.layoutRight {
+  float: right;
+  padding-right: 15px;
+}
+
+input.searchbar {
+  border-width: 1px;
+  position: relative;
+  top: -18px;
+  font-family: system-ui;
+  font-size: 20px;
+  width: 400px;
+  height: 35px;
+}
+
+input.searchbutton {
+  position: relative;
+  top: -20px;
+}
+
+div.layoutBar {
+  padding: 10px;
+  width: auto;
+  margin-top: 0px;
+  background-color: #F0F0F0;
+  height: 50px;
+  box-shadow: 0px 0px 5px grey;
+}
+
+div.content {
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+div.leftMenu{
+  float: left;
+  height: calc(100% - 5px);
+  width: 250px;
+  margin-top: 5px;
+  background-color: #FAFAFA;
+}
+
+input.leftMenuItems {
+  border: 0px;
+  outline: none;
+  margin: 5px 2px;
+  padding-left: 20px;
+  display: block;
+  width: 100%;
+  font-family: system-ui;
+  font-size: 24px;
+  text-align: left;
+  background-color: #FAFAFA;
+}
+
+body {
+  margin:0px;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+input.leftMenuItems:hover {
+  background-color: #EFEFEF;
+}
