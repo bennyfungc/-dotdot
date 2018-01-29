@@ -1,0 +1,49 @@
+/* CSS stylesheet for Registration page */
+
+div.container {
+  margin: auto;
+  width: 70%;
+}
+
+div.reg-title {
+  margin: 1px 10px 1px 10px;
+  padding: 1px 10px 1px 10px;
+  font-size: 13pt;
+  /*font-family: verdana;*/
+  font-family: system-ui;
+  background-color: #F4F4F4
+}
+
+div.reg-form {
+  margin: 10px 10px 10px 10px;
+}
+
+input.reg-input {
+  display: block;
+  margin: 12px 0px 10px 0px;
+  font-size: 13pt;
+  /*font-family: verdana;*/
+  /*border: none;*/
+  /*color: white;*/
+  padding: 10px 20px;
+  text-decoration: none;
+  outline: none;
+}
+
+input.reg-submit {
+  background-color: #555555;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /*outline: none;*/
+}
+
+
+input.reg-submit:hover {
+  background-color: #7F7F7F;
+}
