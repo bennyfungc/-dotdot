@@ -1,4 +1,9 @@
 div.login-container {
+  margin-top: 200px;
+  margin-left: calc((100% - 802px) / 2);
+  margin-right: calc((100% - 802px) / 2);
+  padding: 20px;
+  width: 802px;
 }
 
 div.login-form {
@@ -8,10 +13,9 @@ div.login-form {
 }
 
 div.login-title {
-  margin-top: 200px;
   margin-left: calc((100% - 802px) / 2);
   margin-right: calc((100% - 802px) / 2);
-  width: 890px;
+  width: 802px;
 }
 
 input.login-input {
