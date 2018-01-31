@@ -6,16 +6,22 @@ div.login-container {
   width: 802px;
 }
 
+div.login-title {
+  margin-left: calc((100% - 802px) / 2);
+  margin-right: calc((100% - 802px) / 2);
+  width: 802px;
+}
+
 div.login-form {
   margin-left: calc((100% - 241px) / 2);
   margin-right: calc((100% - 241px) / 2);
   width: 241px;;
 }
 
-div.login-title {
-  margin-left: calc((100% - 802px) / 2);
-  margin-right: calc((100% - 802px) / 2);
-  width: 802px;
+div.reg-note {
+  margin-left: calc((100% - 241px) / 2);
+  margin-right: calc((100% - 241px) / 2);
+  width: 241px;;
 }
 
 input.login-input {
@@ -47,4 +53,18 @@ input.login-submit:hover {
 form {
   display: inline-block;
   text-align: center;
+}
+
+p.reg-note {
+  color: white;
+  font-size: 18px;
+  font-family: system-ui;
+  text-align: center;
+  margin: 10px;
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+}
+
+a.reg-link {
+  text-shadow: 0;
+  color: inherit;
 }

@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <title>dotdot</title>
     <link rel="stylesheet" type="text/css" href="./style.css" >
     <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png" />
   </head>
   <body>
-    <div class="layoutBar">
-      <a class="logo" href="./index.html">
-        <img class="logo" src="./assets/dotdot_logo.png" />
-      </a>
-      <div class="searchbar">
+    <div class="navbar">
+      <div class="navleft">
+        <a class="logo" href="./index.html">
+          <img class="logo" src="./assets/dotdot_logo.png" />
+        </a>
+      </div>
+      <div class="navright">
+        <a class="profile" href="./profile.html">
+          <img class="profile_pic" src="./assets/anon.jpg" />
+        </a>
+        <a class="upload" href="./upload.html">
+          <img class="upload" src="./assets/upload.png" />
+        </a>
         <form action="/search.html">
           <input class="searchbar" type="search" placeholder="Search">
-          <button class="search" type="submit"> 
+          <button class="search" type="submit">
             <img class="search" src="./assets/search.png" />
           </button>
         </form>
       </div>
-      <div class="layoutRight">
-        <a class="upload" href="./upload.html">
-          <img class="upload" src="./assets/upload.png" />
-        </a>
-        <a class="profile" href="./profile.html">
-          <img class="profile_pic" src="./assets/anon.jpg" />
-        </a>
-      </div>
     </div>
-    <div class="content">
+    <div class="body-container">
       <div class="leftMenu">
         <input class="leftMenuItems" type="button" value="Home" />
         <input class="leftMenuItems" type="button" value="Hot" />

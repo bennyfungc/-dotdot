@@ -9,6 +9,23 @@ body {
   width: 100%;
 }
 
+div.navleft {
+  display: inline-block;
+  float: left;
+  width: 230px;
+}
+
+div.navright{
+  display: inline-block;
+  float: right;
+  width: auto;
+}
+
+form {
+  float: left;
+  margin-top: 3px;
+}
+
 img.logo {
   height: 50px;
 }
@@ -22,23 +39,24 @@ img.profile_pic {
   height: 45px;
   border-radius: 50%;
   padding-right: 5px;
+  float: right;
 }
 
 img.upload {
   height: 40px;
   padding-right: 5px;
+  float: right;
 }
 
 img.search {
-  height: 30px;
+  height: 28px;
 }
 
 button.search {
   position: relative;
-  top: -13px;
+  top: 3px;
   background: #ddd;
   border: none;
-  cursor: pointer;
 }
 
 button.search:hover {
@@ -55,34 +73,16 @@ a.upload {
   text-decoration: none;
 }
 
-div.searchbar{
-  display: inline-block;
-  width: 70%;
-}
-
-div.layoutRight {
-  float: right;
-  width: 7%;
-}
-
 input.searchbar {
   border: none;
-  position: relative;
-  top: -18px;
-  margin-left: 10px;
   font-family: system-ui;
   padding: 5px;
   font-size: 20px;
-  width: 60%;
+  width: 70%;
   height: 35px;
 }
 
-input.searchbutton {
-  position: relative;
-  top: -20px;
-}
-
-div.layoutBar {
+div.navbar{
   padding: 10px;
   width: auto;
   margin-top: 0px;
@@ -91,7 +91,7 @@ div.layoutBar {
   box-shadow: 0px 0px 5px grey;
 }
 
-div.content {
+div.body-container {
   width: 100%;
   height: calc(100% - 70px);
 }
@@ -119,4 +119,22 @@ input.leftMenuItems {
 
 input.leftMenuItems:hover {
   background-color: #EFEFEF;
+}
+
+@media only screen and (max-width: 650px){
+  div.navleft {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  div.navright {
+    position: absolute;
+    width: 100%;
+  }
+
+  div.leftMenu {
+    height: auto;
+    width: 100%;
+  }
+
 }
