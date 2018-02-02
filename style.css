@@ -13,12 +13,14 @@ div.navleft {
   display: inline-block;
   float: left;
   width: 230px;
+  margin: 10px;
 }
 
 div.navright{
   display: inline-block;
   float: right;
   width: auto;
+  margin: 10px;
 }
 
 form {
@@ -78,16 +80,15 @@ input.searchbar {
   font-family: system-ui;
   padding: 5px;
   font-size: 20px;
-  width: 70%;
+  width: 50%;
   height: 35px;
 }
 
 div.navbar{
-  padding: 10px;
-  width: auto;
+  width: 100%;
   margin-top: 0px;
   background-color: #F0F0F0;
-  height: 50px;
+  height: 70px;
   box-shadow: 0px 0px 5px grey;
 }
 
@@ -152,10 +153,110 @@ div.search-result {
   margin: 20px;
   padding: 10px;
 }
-p.search-note {
+
+p.reg-font {
   float: left;
-  font-size: 16px;
+  font-size: 20px;
   font-family: system-ui;
+}
+
+h2.reg-font {
+  font-size: 20px;
+  font-family: system-ui;
+  font-weight: normal;
+}
+
+div.view-image {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+div.img-buttons {
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 50px;
+  justify-content: flex-end;
+}
+
+div.view-rel {
+  margin: 75px;
+  margin-top: 25px;
+}
+
+div.view-bottom {
+  margin: 75px;
+}
+
+img.body-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+div.rel-text {
+  display: block;
+  width: 100%;
+  margin: 10px;
+}
+
+div.rel-gallery {
+  width: 200px;
+  height: 150px;
+  display: inline-grid;
+  margin: 10px;
+}
+
+div.rel-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+div.comment-row {
+  width: 100%;
+}
+
+form.chat-input {
+  display: inline-block;
+  width: 100%;
+}
+
+[id='comment'] {
+  width: 90%;;
+}
+
+div.chat-container {
+  display: inline-block;
+  width: 90%;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+a.profile-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.profile-link:hover {
+  text-decoration: underline;
+}
+
+img.comment_pic {
+  height: 45px;
+  border-radius: 50%;
+  float: left;
+  margin: 20px;
+}
+
+span.time {
+  color: #aaa;
 }
 
 @media only screen and (max-width: 650px){
@@ -166,7 +267,6 @@ p.search-note {
 
   div.navright {
     position: absolute;
-    width: 100%;
   }
 
   div.leftMenu, div.body-right {
@@ -174,4 +274,30 @@ p.search-note {
     width: 100%;
   }
 
+  div.view-image, div.view-rel, div.view-bottom {
+    height: auto;
+    width: 100%;
+    margin: 5px;
+  }
+
+  img.body-image {
+    width: 95%;
+  }
+}
+
+
+/* Animate like button */
+[id='toggle-heart'] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for='toggle-heart'] {
+  color: #aab8c2;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+[id='toggle-heart']:checked + label {
+  color: #e2264d;
 }
