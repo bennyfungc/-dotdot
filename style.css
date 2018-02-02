@@ -54,11 +54,13 @@ img.search {
   height: 28px;
 }
 
-button.search {
+button.button {
   position: relative;
   top: 3px;
   background: #ddd;
   border: none;
+  font-family: system-ui;
+  font-size: 16px;
 }
 
 button.search:hover {
@@ -218,11 +220,20 @@ div.rel-gallery img {
 
 div.comment-row {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 form.chat-input {
   display: inline-block;
   width: 100%;
+}
+
+textarea {
+  padding: 12px;
+  border: 1px solide #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
 [id='comment'] {
