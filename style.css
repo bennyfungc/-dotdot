@@ -283,14 +283,11 @@ span.time {
     visibility: hidden;
   }
 
-  div.navbar {
-  }
-
   form {
     margin-left: 10px;
   }
 
-  div.leftMenu, div.body-right {    
+  div.leftMenu, div.body-right {
     margin-top: 5px;
     height: auto;
     width: 100%;
