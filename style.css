@@ -12,7 +12,7 @@ body {
 div.navleft {
   display: inline-block;
   float: left;
-  width: 230px;
+  width: auto;
   margin: 10px;
 }
 
@@ -24,8 +24,9 @@ div.navright{
 }
 
 form {
-  float: left;
+  float: right;
   margin-top: 3px;
+  margin-left: 30px;
 }
 
 img.logo {
@@ -68,11 +69,15 @@ button.search:hover {
 }
 
 a.profile {
+  position: absolute;
+  right: 5px;
   height: 0px;
   text-decoration: none;
 }
 
 a.upload {
+  position: absolute;
+  right: 60px;
   height: 0px;
   text-decoration: none;
 }
@@ -80,13 +85,14 @@ a.upload {
 input.searchbar {
   border: none;
   font-family: system-ui;
-  padding: 5px;
+  padding: 10px;
   font-size: 20px;
   width: 50%;
   height: 35px;
 }
 
 div.navbar{
+  vertical-align: middle;
   min-width: 300px;
   width: 100%;
   margin-top: 0px;
@@ -230,7 +236,7 @@ form.chat-input {
 
 textarea {
   padding: 12px;
-  border: 1px solide #ccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
@@ -272,15 +278,20 @@ span.time {
 }
 
 @media only screen and (max-width: 650px){
-  div.navleft {
+  a.logo {
     position: absolute;
     visibility: hidden;
   }
 
-  div.navright {
+  div.navbar {
   }
 
-  div.leftMenu, div.body-right {
+  form {
+    margin-left: 10px;
+  }
+
+  div.leftMenu, div.body-right {    
+    margin-top: 5px;
     height: auto;
     width: 100%;
   }
