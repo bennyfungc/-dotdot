@@ -105,7 +105,6 @@ div.leftMenu{
   float: left;
   height: inherit;
   width: 250px;
-  margin-top: 5px;
   background-color: #FAFAFA;
   display: table-row;
 }
@@ -114,7 +113,6 @@ div.body-right {
   float: right;
   height: calc(100% - 5px);
   width: calc(100% - 250px);
-  margin-top: 5px;
   text-align: center;
   display: table-row;
 }
