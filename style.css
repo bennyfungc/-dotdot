@@ -87,6 +87,7 @@ input.searchbar {
 }
 
 div.navbar{
+  min-width: 300px;
   width: 100%;
   margin-top: 0px;
   background-color: #F0F0F0;
@@ -118,20 +119,21 @@ div.body-right {
   display: table-row;
 }
 
-input.leftMenuItems {
+a.leftMenuItems {
+  text-decoration: none;
+  color: black;
   border: 0px;
   outline: none;
   margin: 5px 2px;
   padding-left: 20px;
   display: block;
-  width: 100%;
   font-family: system-ui;
   font-size: 24px;
   text-align: left;
   background-color: #FAFAFA;
 }
 
-input.leftMenuItems:hover {
+a.leftMenuItems:hover {
   background-color: #EFEFEF;
 }
 
@@ -234,6 +236,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  font-family: system-ui;
 }
 
 [id='comment'] {
@@ -277,7 +280,6 @@ span.time {
   }
 
   div.navright {
-    position: absolute;
   }
 
   div.leftMenu, div.body-right {
