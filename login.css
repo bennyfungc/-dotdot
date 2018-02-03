@@ -65,6 +65,9 @@ p.reg-note {
 }
 
 a.reg-link {
-  text-shadow: 0;
   color: inherit;
+}
+
+body.login-body {
+  background-image: url("./assets/body-bg.jpg");
 }
