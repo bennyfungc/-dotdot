@@ -1,0 +1,48 @@
+search bar should work (searches images)
+
+
+registration should create unique user account  --DONE--
+login page should login.
+
+
+    comment section should be able to comment (messages are stored)
+    transfer money
+
+upload pictures (only creators can do)
+
+
+Seperate accounts to two types:
+    1. Content Creator
+        - Can upload images to website
+        - Have profile page
+        - Can comment on pictures
+        - (Cannot search??)
+        - Can recieve money
+    2. Viewers
+        - Can search pictures
+        - Can comment on pictures
+        - Have profile page
+        - (Cannot upload??)
+        - Can pay
+
+
+
+
+
+
+
+Object - User
+variables:
+    - username
+    - email
+    - password
+    - account type
+    - list of uploaded images
+    - Money
+
+
+At registration page, create this user object. (Store in localStorage??)
+
+Upload images to folder in directory.
+
+Need a way to log in/ log out.

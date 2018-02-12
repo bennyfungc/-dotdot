@@ -6,6 +6,7 @@
   <title>Registration Page</title>
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="reg.css" />
+  <script type="text/javascript" src="user.js"></script>
 </head>
 
 <body>
@@ -17,15 +18,15 @@
       <p>Registration</p>
     </div>
     <div class="reg-form">
-      <form action="index.html">
-        <input class="reg-input" type="text" placeholder="Username">
-        <input class="reg-input" type="password" placeholder="Password">
+      <form>
+        <input class="reg-input" id="username" type="text" placeholder="Username">
+        <input class="reg-input" id="password" type="password" placeholder="Password">
         <input class="reg-input" type="password" placeholder="Confirm Password">
-        <input class="reg-input" type="date" >
-        <input class="reg-input" type="text" placeholder="Email">
+        <input class="reg-input" id="email" type="text" placeholder="Email">
         <input class="reg-input" type="text" placeholder="Confirm Email">
-        <input class="reg-input" type="checkbox">Content Creator<br>
-        <input class="reg-submit" type="submit">
+        <input class="reg-input" id="checkbox" type="checkbox">Content Creator<br>
+        <!-- <input class="reg-submit" type="submit" onclick="submitForm()"> -->
+        <input class="reg-submit" value="Submit" readonly onclick="submitRegistration()">
       </form>
     </div>
   </div>

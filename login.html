@@ -6,6 +6,7 @@
     <title>dotdot Login</title>
     <link rel="stylesheet" type="text/css" href="./login.css" >
     <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png" />
+    <script type="text/javascript" src="user.js"></script>
   </head>
   <body class="login-body">
     <div class="login-container">
@@ -13,10 +14,10 @@
         <img alt="" class="login-logo" src="./assets/dotdot_logo.png">
       </div>
       <div class="login-form">
-        <form action="./index.html">
-          <input class="login-input" type="text" placeholder="Username">
-          <input class="login-input" type="password" placeholder="Password">
-          <input class="login-submit" type="submit" value="Login">
+        <form>
+          <input class="login-input" id="login-username" type="text" placeholder="Username">
+          <input class="login-input" id="login-password" type="password" placeholder="Password">
+          <input class="login-submit" value="Login" readonly onclick="submitLogin()">
         </form>
       </div>
       <div class="reg-note">

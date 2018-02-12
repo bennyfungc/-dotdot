@@ -6,8 +6,13 @@
     <title>dotdot</title>
     <link rel="stylesheet" type="text/css" href="./style.css" >
     <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png" />
+    <script type="text/javascript" src="user.js"></script>
   </head>
   <body>
+  <script>
+    if (localStorage.getItem('isLogin') == 'true')
+      alert(localStorage.getItem('login-username') + ' logged in');
+  </script>
     <div class="navbar">
       <div class="navleft">
         <a class="logo" href="./index.html">
