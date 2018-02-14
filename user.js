@@ -76,29 +76,6 @@ function submitRegistration() {
     window.location.href = "./login.html";
 }
 
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
 function submitLogin() {
   let db = new Database();
   let username = document.getElementById("login-username").value;
@@ -113,7 +90,6 @@ function submitLogin() {
   if(!valid) {
     alert("Username or password is incorrect. Try again noob");
   } else {
-    setCookie('isLogin', username, 100);
 
     localStorage.setItem('isLogin', 'true');
     localStorage.setItem('login-username', username);
@@ -121,4 +97,6 @@ function submitLogin() {
   }
 }
 
-
+function logout() {
+  localStorage.setItem('isLogin', 'false');
+}

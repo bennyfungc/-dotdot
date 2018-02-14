@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="./style.css">
   <link rel="stylesheet" type="text/css" href="./profile.css">
   <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png" />
+  <script type="text/javascript" src="user.js"></script>
 </head>
 
 <body>
@@ -25,11 +26,11 @@
     <div class="navright">
       <a class="profile" href="./profile.html">
           <img alt="" class="profile_pic" src="./assets/anon.jpg" />
-        </a>
+      </a>
       <a class="upload" href="./upload.html">
           <img alt="" class="upload" src="./assets/upload.png" />
-        </a>
-
+      </a>
+      <p class="username" id="display-name">Hello</p>
     </div>
   </div>
   <div class="body-container">
@@ -37,6 +38,7 @@
         <a class="leftMenuItems" href="./index.html" >Home</a>
         <a class="leftMenuItems" href="./index.html" >Hot</a>
         <a class="leftMenuItems" href="./index.html" >Favorites</a>
+        <a class="leftMenuItems" href="./login.html" onclick="logout()">Logout</a>
     </div>
     <div class="body-right">
       <div class="cover-top-bar">
@@ -102,12 +104,9 @@
             <img alt="" src="./artwork/5.jpg" >
           </a>
         </div>
-
-
-
       </div>
     </div>
   </div>
 </body>
-
+<script type="text/javascript" src="session.js"></script>
 </html>

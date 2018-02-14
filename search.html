@@ -6,6 +6,7 @@
     <title>dotdot</title>
     <link rel="stylesheet" type="text/css" href="./style.css" >
     <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png" />
+    <script type="text/javascript" src="user.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -13,12 +14,12 @@
         <a class="logo" href="./index.html">
           <img alt="" class="logo" src="./assets/dotdot_logo.png" />
         </a>
-        <form action="./search.html">
-            <input class="searchbar" type="search" placeholder="Search">
+        <div>
+            <input class="searchbar" id="search-input" type="search" placeholder="Search">
             <button class="button" type="submit">
                 <img alt="" class="search" src="./assets/search.png" />
             </button>
-        </form>
+        </div>
       </div>
       <div class="navright">
         <a class="profile" href="./profile.html">
@@ -37,7 +38,9 @@
       </div>
       <div class="body-right">
         <div class="search-result">
-          <p class="reg-font">Search results for </p>
+          <p class="reg-font">Search results for
+            <script>console.log(document.getElementById("search-input").value)</script>
+          </p>
         </div>
         <div class="gallery">
           <a href="./view.html" >

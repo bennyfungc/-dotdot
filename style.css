@@ -51,6 +51,16 @@ img.upload {
   float: right;
 }
 
+p.username {
+  float: right;
+  font-size: 20px;
+  font-family: system-ui;
+  position: absolute;
+  right: 120px;
+  top: 0px;
+  height: 0px;
+}
+
 img.search {
   height: 28px;
 }

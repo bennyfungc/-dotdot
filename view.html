@@ -6,6 +6,8 @@
   <title>dotdot</title>
   <link rel="stylesheet" type="text/css" href="./style.css" >
   <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png" />
+  <script type="text/javascript" src="session.js"></script>
+  <script type="text/javascript" src="user.js"></script>
 </head>
 <body>
   <div class="navbar">
@@ -27,7 +29,7 @@
       <a class="upload" href="./upload.html">
         <img alt=""  class="upload" src="./assets/upload.png" />
       </a>
-
+      <p class="username" id="display-name">Hello</p>
     </div>
   </div>
   <div class="body-container">
@@ -35,6 +37,7 @@
       <a class="leftMenuItems" href="./index.html" >Home</a>
       <a class="leftMenuItems" href="./index.html" >Hot</a>
       <a class="leftMenuItems" href="./index.html" >Favorites</a>
+      <a class="leftMenuItems" href="./login.html" onclick="logout()">Logout</a>
     </div>
     <div class="body-right">
       <div class="view-image">
@@ -74,4 +77,5 @@
     </div>
   </div>
 </body>
+<script type="text/javascript" src="session.js"></script>
 </html>
