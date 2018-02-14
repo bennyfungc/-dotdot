@@ -1,16 +1,21 @@
-search bar should work (searches images)
+## TODO ##
+#### Here is the list of things we need to do ####
 
+         * search bar should work (searches images)
+--DONE-- * registration should create unique user account
+--DONE-- * login page should login the user to our app
+         * user should stay logged in until logged out
+         * logout button should log user out
+         * Pages should know if user is logged in/ user types
 
-registration should create unique user account  --DONE--
-login page should login.
+         * comment section should be able to comment (messages are stored)
+         * can transfer money to 'content creator'
 
+         * creators should be able to upload pictures
 
-    comment section should be able to comment (messages are stored)
-    transfer money
+        --MORE--?
 
-upload pictures (only creators can do)
-
-
+## NOTES ##
 Seperate accounts to two types:
     1. Content Creator
         - Can upload images to website
@@ -24,11 +29,6 @@ Seperate accounts to two types:
         - Have profile page
         - (Cannot upload??)
         - Can pay
-
-
-
-
-
 
 
 Object - User
