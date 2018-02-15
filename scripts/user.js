@@ -1,17 +1,23 @@
+/*
+ * Database is a dictionary of user accounts
+ * where the key is the username
+ * and the value is a user object
+ */
 class Database {
-  // list of accounts
+
   constructor() {
     let db = localStorage.getItem('database');
+
     // Get data if database already there
     if (db) {
       this.accounts = JSON.parse(db);
-    } else {
+    } else {  // initialize database
       this.accounts = {};
       this.updateDatabase();
     }
   }
 
-  // updates this.accounts to localstorage
+  // updates this.accounts dictionary to localstorage
   updateDatabase() {
     localStorage.setItem('database', JSON.stringify(this.accounts));
   }
@@ -34,11 +40,17 @@ class Database {
       return false;
     return true;
   }
-
 }
 
-
+/*
+ * Account is a user object
+ * Each user object has a username, password, email, type, images, money
+ * where type can be 'creator' or 'user'
+ * where images is a list of images the creator uploaded
+ * where money is the currency used in our app
+ */
 class Account {
+
   constructor(username, password, email, type) {
     this.username = username;
     this.email = email;
@@ -48,13 +60,21 @@ class Account {
     this.money = 100;
   }
 
-  check() {
-
-  }
-
+  check() {}
 }
 
 
+/***  Functions  ***/
+
+/*
+ *  This function is called when the submit button is clicked
+ *  in the registration page.
+ *
+ *  It saves the registration info from the user and creates a
+ *  user object from that info.
+ *
+ *  If a username is already taken, an error would be thrown.
+ */
 function submitRegistration() {
   let db = new Database();
   let username = document.getElementById("username").value;
@@ -76,6 +96,19 @@ function submitRegistration() {
     window.location.href = "./login.html";
 }
 
+
+
+
+/*
+ *  This function is called when the login button is clicked
+ *  in the login page.
+ *
+ *  It logins the user if the account is in the database and
+ *  sets a variable in localStorage 'isLogin' to be 'true' and
+ *  sets a variable in localStorage 'login-username' to be the user's username
+ *
+ *  If login info is incorrect, then an error would be thrown.
+ */
 function submitLogin() {
   let db = new Database();
   let username = document.getElementById("login-username").value;
