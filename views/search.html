@@ -4,29 +4,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>dotdot</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" >
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/icon.png" />
-    <script type="text/javascript" src="user.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" >
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/icon.png" />
+    <script type="text/javascript" src="../scripts/user.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="navleft">
         <a class="logo" href="./index.html">
-          <img alt="" class="logo" src="./assets/dotdot_logo.png" />
+          <img alt="" class="logo" src="../assets/dotdot_logo.png" />
         </a>
-        <form onsubmit="return false">
-            <input class="searchbar" id="search-input" type="search" placeholder="Search">
-            <button class="button" id="search-button" type="button" onclick="searchSubmit()">
-                <img alt="" class="search" src="./assets/search.png" />
+        <form action="./search.html" method="GET">
+            <input class="searchbar" id="search-input" name="q" type="search" placeholder="Search">
+            <button class="button" id="search-button" type="button">
+                <img alt="" class="search" src="../assets/search.png" />
             </button>
         </form>
       </div>
       <div class="navright">
         <a class="profile" href="./profile.html">
-          <img alt="" class="profile_pic" src="./assets/anon.jpg" />
+          <img alt=""  class="profile_pic" src="../assets/anon.jpg" />
         </a>
-        <a class="upload" onclick="" >
-          <img alt="" class="upload" src="./assets/upload.png" />
+        <a class="upload" href="./upload.html">
+          <img alt=""  class="upload" src="../assets/upload.png" />
         </a>
         <p class="username" id="display-name">Hello</p>
       </div>
@@ -39,57 +39,57 @@
         <a class="leftMenuItems" href="./login.html" onclick="logout()">Logout</a>
       </div>
       <div class="body-right">
-        <div class="search-result" id="search-result" style="display: none">
+        <div class="search-result">
           <p class="reg-font" id="searchQuery">Search results for </p>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/1.jpg" >
+            <img alt=""  src="../artwork/1.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/2.jpg" >
+            <img alt=""  src="../artwork/2.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/3.jpg" >
+            <img alt=""  src="../artwork/3.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/4.jpg" >
+            <img alt=""  src="../artwork/4.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/5.jpg" >
+            <img alt=""  src="../artwork/5.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/6.jpg" >
+            <img alt=""  src="../artwork/6.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/7.jpg" >
+            <img alt=""  src="../artwork/7.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/8.jpg" >
+            <img alt=""  src="../artwork/8.jpg" >
           </a>
         </div>
         <div class="gallery">
           <a href="./view.html" >
-            <img alt="" src="./artwork/9.jpg" >
+            <img alt=""  src="../artwork/9.jpg" >
           </a>
         </div>
       </div>
     </div>
   </body>
-  <script type="text/javascript" src="session.js"></script>
-  <script type="text/javascript" src="search.js"></script>
+  <script type="text/javascript" src="../scripts/search.js"></script>
+  <script type="text/javascript" src="../scripts/session.js"></script>
 </html>
