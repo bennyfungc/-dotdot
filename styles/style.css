@@ -179,6 +179,13 @@ p.reg-font {
   padding: 10px;
 }
 
+p.img-font {
+  font-size: 20px;
+  font-family: system-ui;
+  width: 100px;
+  margin: 0px;
+}
+
 h2.reg-font {
   font-size: 20px;
   font-family: system-ui;
@@ -186,24 +193,46 @@ h2.reg-font {
 }
 
 div.view-image {
-  margin-top: 50px;
+  text-align: left;
   margin-bottom: 50px;
   width: 100%;
 }
 
-div.img-buttons {
-  display: inline-block;
+div.uploader {
+  width: calc(100%-30px);
+  margin: 30px;
+}
 
-  height: 50px;
+div.img-buttons {
+  margin: 60px;
+  float: right;
+  width: 80%;
+
+}
+
+input.send-money {
+  display: block;
+  margin: 12px 0px 10px 0px;
+  font-family: system-ui;
+  font-size: 13pt;
+  padding: 5px 5px;
+  text-decoration: none;
+  outline: none;
+}
+
+form.moneyForm {
+  float: none;
 }
 
 div.view-rel {
   margin: 75px;
   margin-top: 25px;
+  text-align: left;
 }
 
 div.view-bottom {
   margin: 75px;
+  text-align: left;
 }
 
 img.body-image {
@@ -214,7 +243,7 @@ img.body-image {
 }
 
 a.profile-link {
-  color: black;
+  color: #777;
   text-decoration: none;
   font-family: system-ui;
   font-size: 20px;

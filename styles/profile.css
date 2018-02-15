@@ -65,6 +65,7 @@ hr.line-right {
 div.customize-btn {
   display: block;
   float: left;
+  width: 50%;
   /*background-color: red;*/
   /*min-height: 5px;*/
 }
