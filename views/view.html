@@ -40,8 +40,9 @@
     </div>
     <div class="body-right">
       <div class="view-image">
-        <img alt=""  class="body-image" src="../artwork/body.jpg">
+        <img alt="" class="body-image" id="body-img" src="../artwork/body.jpg">
         <div class="img-buttons">
+        <a class="profile-link" href="#">boi</a><br>
           <input id="toggle-heart" type="checkbox" />
           <label for="toggle-heart">❤</label>
         </div>
@@ -60,21 +61,24 @@
       </div>
       <div class="view-bottom">
         <h2 class="reg-font">Comments</h2>
-        <form action="./view.html" class="chat-input" >
+        <form onsubmit="return false" action="./view.html" class="chat-input" >
           <div class="comment-row">
             <textarea id="comment" placeholder="Leave a comment !"></textarea><br>
-            <button class="button" type="submit">Submit</button>
+            <button class="button" type="submit" onclick="commentSubmit()">Submit</button>
           </div>
         </form>
-        <div class="chat-container">
-          <img alt=""  class="comment_pic" src="../assets/anon.jpg">
-          <a class="profile-link" href="./profile.html">ThinkingMan</a><br>
-          <span class="time">2/1/2018 6:02 PM</span>
-          <p>すごい!</p>
+        <div class="chat-container" id="chat-container">
+          <div class="chat-bubble">
+            <img alt=""  class="comment_pic" src="../assets/anon.jpg">
+            <a class="profile-link" href="./profile.html">ThinkingMan</a><br>
+            <span class="time">2/1/2018 6:02 PM</span>
+            <p>すごい!</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </body>
 <script type="text/javascript" src="../scripts/session.js"></script>
+<script type="text/javascript" src="../scripts/view.js"></script>
 </html>
