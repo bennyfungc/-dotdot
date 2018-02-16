@@ -40,6 +40,18 @@ class Database {
       return false;
     return true;
   }
+
+  transaction(sender, receiver, amount) {
+      if(this.accounts[sender].money - amount > 0) {
+        this.accounts[sender].money -= amount;
+        this.accounts[receiver].money += amount;
+        this.updateDatabase();
+        return true;
+      }
+      else {
+        return false;
+      }
+  }
 }
 
 /*
@@ -60,7 +72,6 @@ class Account {
     this.money = 100;
   }
 
-  check() {}
 }
 
 

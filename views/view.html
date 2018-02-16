@@ -48,22 +48,28 @@
           <!--<input id="toggle-heart" type="checkbox" />
           <label for="toggle-heart">❤</label><br> -->
           <p class="img-font">Send Dots!</p>
-          <form action="#" method="POST" class="moneyForm" id="sendMoney">
-            <input class="send-money" type="number" >
-            <button class="button" type="submit">Submit</button>
+          <form onsubmit="sendmoneySubmit()" method="POST" class="moneyForm" id="sendMoney">
+            <input class="send-money" type="number" value="0" id="moneyAmt">
+            <button class="button" type="submit" >Submit</button>
           </form>
         </div>
       </div>
       <div class="view-rel">
         <h2 class="reg-font">Related Images</h2>
         <div class="rel-gallery">
-          <img alt=""  src="../artwork/1.jpg">
+          <a href="./view.html?img=1.jpg" >
+            <img alt=""  src="../artwork/1.jpg">
+          </a>
         </div>
         <div class="rel-gallery">
-          <img alt=""  src="../artwork/4.jpg">
+          <a href="./view.html?img=4.jpg" >
+            <img alt=""  src="../artwork/4.jpg">
+          </a>
         </div>
         <div class="rel-gallery">
-          <img alt=""  src="../artwork/3.jpg">
+          <a href="./view.html?img=3.jpg" >
+            <img alt=""  src="../artwork/3.jpg">
+          </a>
         </div>
       </div>
       <div class="view-bottom">

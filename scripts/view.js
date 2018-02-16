@@ -46,3 +46,24 @@ function commentSubmit() {
   chatContainer.prepend(newComment);
 
 }
+
+function sendmoneySubmit() {
+  db = new Database();
+  transAmt = parseInt(document.getElementById('moneyAmt').value);
+
+  receiver = 'boi';
+  sender = localStorage.getItem('login-username');
+
+  if (transAmt > 0){
+    success = db.transaction(sender, receiver, transAmt);
+    if(!success) {
+      alert("Insufficient funds! :(");
+    }
+    else {
+      alert(sender + " sent " + receiver + " : " + transAmt + " dots!");
+    }
+  }
+  else {
+    alert("don't try sending 0 dots :(");
+  }
+}
