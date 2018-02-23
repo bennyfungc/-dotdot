@@ -47,3 +47,20 @@ At registration page, create this user object. (Store in localStorage??)
 Upload images to folder in directory.
 
 Need a way to log in/ log out.
+
+
+
+--------------------------------------------------------------------------------
+
+TODO React stuff
+
+- make components
+  - top nav bar
+  - left nav bar
+  - image thumbnail
+  - view page image
+  - chat
+
+- add components pages
+- router
+- unit tests
